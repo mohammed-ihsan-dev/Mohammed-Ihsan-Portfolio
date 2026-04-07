@@ -28,7 +28,7 @@ const About = () => {
                             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                             <div className="relative aspect-square rounded-2xl overflow-hidden bg-slate-800 border border-white/10">
                                 <img
-                                    src="https://media.licdn.com/dms/image/v2/D5603AQHes-X0p7xczw/profile-displayphoto-crop_800_800/B56ZwGONGhJwAI-/0/1769630914928?e=1772064000&v=beta&t=knMPHt6nxHN30U29QdZZQPQDmktq0M_E395S16FI1ec"
+                                    src="/IhsanPic.jpeg"
                                     alt={profile.name}
                                     className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-500"
                                 />

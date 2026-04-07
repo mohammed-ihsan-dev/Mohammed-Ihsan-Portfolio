@@ -36,7 +36,7 @@ export const profile = {
   location: "Kerala, India",
   email: "mohammed.ihsan.dev@gmail.com",
   social: {
-    github: "https://github.com/itsihsaney",
+    github: "https://github.com/mohammed-ihsan-dev",
     linkedin: "https://www.linkedin.com/in/itsihsaney/",
     twitter: "https://x.com/itsihsaney?s=21",
     instagram: "https://instagram.com/_ihsaney",
@@ -90,7 +90,7 @@ export const projects = [
     title: "MERN E-Commerce App",
     description: "A fully functional e-commerce platform with user authentication, product management, cart functionality, and payment integration.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Redux"],
-    github: "#",
+    github: "https://github.com/mohammed-ihsan-dev/BaeBy-ecommerce-project",
     live: "#",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2664&auto=format&fit=crop"
   },
@@ -108,8 +108,8 @@ export const projects = [
     title: "Personal Portfolio",
     description: "This modern, dark-themed portfolio website built with React and Tailwind CSS to showcase my work and skills.",
     tech: ["React", "Tailwind CSS", "Framer Motion"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/mohammed-ihsan-dev/Mohammed-Ihsan-Portfolio",
+    live: "https://mohammed-ihsan.vercel.app/",
     image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2555&auto=format&fit=crop"
   }
 ];

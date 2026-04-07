@@ -34,13 +34,13 @@ export const profile = {
   name: "Mohammed Ihsan",
   role: "Full Stack (MERN) Developer",
   location: "Kerala, India",
-  email: "mdihsan0010@gmail.com",
+  email: "mohammed.ihsan.dev@gmail.com",
   social: {
     github: "https://github.com/itsihsaney",
     linkedin: "https://www.linkedin.com/in/itsihsaney/",
     twitter: "https://x.com/itsihsaney?s=21",
     instagram: "https://instagram.com/_ihsaney",
-    email: "mailto:mdihsan0010@gmail.com"
+    email: "mailto:mohammed.ihsan.dev@gmail.com"
   },
   about: "I am a passionate Full Stack Developer specializing in the MERN stack. With a background in web development and freelance design, I build scalable, high-performance web applications that look great and work smoothly. I love solving complex problems and turning ideas into reality through code.",
   // Short intro for Hero
@@ -118,7 +118,7 @@ export const projects = [
 export const experience = [
   {
     id: 1,
-    role: "Web Development Intern",
+    role: "Software Developer Intern",
     company: "Bridgeon Solutions",
     period: "2025 - Present",
     description: "Assisting in building web applications, fixing bugs, and collaborating with senior developers on real-world projects."

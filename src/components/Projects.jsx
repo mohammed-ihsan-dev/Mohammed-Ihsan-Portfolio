@@ -70,7 +70,7 @@ const Projects = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-14"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
                 >
                     {projects.map((project, index) => (
                         <motion.div
@@ -80,40 +80,54 @@ const Projects = () => {
                             className="h-full"
                         >
                             <TiltCard>
-                                <div className="group glass-card rounded-3xl overflow-hidden relative h-full flex flex-col hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-shadow duration-500">
-                                    {/* Hover Border Gradient Glow */}
-                                    <div className="absolute inset-[-1px] bg-gradient-to-r from-primary via-secondary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-3xl -z-10 animate-border-glow mix-blend-screen" />
-
-                                    <div className="relative h-56 overflow-hidden border-b border-white/5 shrink-0" style={{ transform: "translateZ(30px)" }}>
+                                <div className="group glass-card rounded-[2rem] overflow-hidden relative h-full flex flex-col hover:translate-y-[-8px] hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] transition-all duration-500 border border-white/5">
+                                    {/* Project Image Container */}
+                                    <div className="relative h-64 overflow-hidden shrink-0" style={{ transform: "translateZ(30px)" }}>
+                                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
                                         <img
                                             src={project.image}
                                             alt={project.title}
-                                            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
+                                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-dark-surface to-transparent opacity-90" />
                                     </div>
 
+                                    {/* Content Container */}
                                     <div className="p-8 relative z-10 flex-1 flex flex-col" style={{ transform: "translateZ(40px)" }}>
-                                        <h3 className="text-2xl font-bold mb-3 font-display group-hover:text-primary transition-colors duration-300 text-white">{project.title}</h3>
-                                        <p className="text-gray-200 text-sm mb-6 line-clamp-3 leading-relaxed font-light flex-1 drop-shadow-md">
+                                        <h3 className="text-2xl font-bold mb-3 tracking-tight text-white group-hover:text-primary transition-colors duration-300">
+                                            {project.title}
+                                        </h3>
+                                        
+                                        <p className="text-white/85 text-[15px] mb-6 line-clamp-3 leading-relaxed font-normal flex-1">
                                             {project.description}
                                         </p>
 
+                                        {/* Tech Stack Tags */}
                                         <div className="flex flex-wrap gap-2 mb-8">
                                             {project.tech.map((tech) => (
-                                                <span key={tech} className="px-3 py-1.5 text-[10px] uppercase tracking-widest font-semibold bg-dark/60 text-gray-300 rounded-full border border-white/10 shadow-inner backdrop-blur-md">
+                                                <span 
+                                                    key={tech} 
+                                                    className="px-3 py-1 text-[11px] font-medium bg-white/5 text-slate-300 rounded-lg border border-white/10 backdrop-blur-md"
+                                                >
                                                     {tech}
                                                 </span>
                                             ))}
                                         </div>
 
-                                        <div className="flex gap-4" style={{ transform: "translateZ(50px)" }}>
-                                            <a href={project.github} data-magnetic className="flex-1 py-3 flex items-center justify-center gap-2 glass hover:bg-white/10 text-white rounded-xl transition-all duration-300 text-sm font-medium">
-                                                <FaGithub size={18} /> Code
+                                        {/* Action Buttons */}
+                                        <div className="flex gap-4 mt-auto" style={{ transform: "translateZ(50px)" }}>
+                                            <a 
+                                                href={project.live} 
+                                                data-magnetic 
+                                                className="flex-[1.5] py-3.5 flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-500 text-white rounded-2xl transition-all duration-300 text-sm font-semibold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:scale-[1.02] active:scale-[0.98]"
+                                            >
+                                                <ExternalLink size={18} /> Live Demo
                                             </a>
-                                            <a href={project.live} data-magnetic className="flex-1 py-3 flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white rounded-xl transition-all duration-300 text-sm font-medium premium-shadow relative overflow-hidden group/btn">
-                                                <div className="absolute inset-0 bg-white/20 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700 ease-out skew-x-12" />
-                                                <ExternalLink size={18} /> Live
+                                            <a 
+                                                href={project.github} 
+                                                data-magnetic 
+                                                className="flex-1 py-3.5 flex items-center justify-center gap-2 border border-white/10 hover:border-white/20 hover:bg-white/5 text-white/90 rounded-2xl transition-all duration-300 text-sm font-medium hover:scale-[1.02] active:scale-[0.98]"
+                                            >
+                                                <FaGithub size={18} /> Code
                                             </a>
                                         </div>
                                     </div>

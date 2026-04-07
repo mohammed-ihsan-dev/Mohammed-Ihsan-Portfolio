@@ -87,11 +87,11 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "MERN E-Commerce App",
-    description: "A fully functional e-commerce platform with user authentication, product management, cart functionality, and payment integration.",
+    title: "BaeBy Store",
+    description: "A premium MERN stack e-commerce platform designed for Gen Z. Featuring secure authentication, product management, and a seamless shopping experience.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Redux"],
     github: "https://github.com/mohammed-ihsan-dev/BaeBy-ecommerce-project",
-    live: "#",
+    live: "https://baeby-ecommerce-store.vercel.app/",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2664&auto=format&fit=crop"
   },
   {
